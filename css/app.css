@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous" >
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css' / >
+
+@font-family-sans-serif: "Open Sans", Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base: @font-family-sans-serif;
+
+<style >
+body {
+    font-family: 'Titillium Web', 'Segoe UI Light', 'Open Sans', 'Gabriola';
+    font-size: : 14px;
+}
+
+<!--@colorBase: rgba(0,0,0,0.3);-->
+<!--@colorBase: rgba(232,232,232,1);-->
+
+.navbar{
+        background-color: transparent;
+        background: transparent;
+        border-color: transparent;
+        line-height: 2px;
+        min-height: 0px;
+        padding-top: 0; 
+        padding-right: 4px;
+}
+
+.font-nl {
+	font-size:14px;
+}
+
+.font-lg {
+	font-size:22px;
+}
+
+.img-responsive {  display: block;  height: auto;  max-width: 50%; }
+
+.h1style{
+        font-family: 'Titillium Web', 'Segoe UI Light', 'Open Sans', 'Gabriola';
+        text-align: center;
+        font-size: 7.5vw;
+}
+
+.h4style{
+        font-family: 'Titillium Web', 'Segoe UI Light', 'Open Sans', 'Gabriola';
+        text-align: center;
+        font-size: 2.5vw;
+}
+
+img {
+        width: 75%;
+        padding-left: 100px;
+        padding-top: 30px;
+        opacity: 0.15;
+        transition: opacity .2s ease-out;
+        -moz-transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;         
+        filter: alpha(opacity=40); /* For IE8 and earlier */
+    }
+
+img:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+// Mixins
+.transition (@prop: all, @time: 1s, @ease: linear) {
+     -webkit-transition: @prop @time @ease;
+     -moz-transition: @prop @time @ease;
+     -o-transition: @prop @time @ease;
+     -ms-transition: @prop @time @ease;
+     transition: @prop @time @ease;
+}
+
+.universal-inline-block {
+     display: inline-block;
+     zoom: 1;
+     *display: inline;
+}
+
+.social-icons {
+text-align: center;
+text-decoration: none;
+vertical-align: middle;
+font-size: 2.5em;
+ul {
+list-style: none;
+li {
+     .universal-inline-block;
+     vertical-align: middle;
+     a {
+          display: none;
+          font-size: 0.4em;
+          text-decoration: none;
+          i {
+               color: @colorBase;
+               .transition(all, 0.2s, ease-in);
+          }
+          &:hover {
+               i {
+                    color: darken(@colorBase, 2%);
+               }
+          }
+          &:focus, &:active {
+               i {
+                    transition: none;
+                    color: darken(@colorBase, 5%);
+                }
+           }
+      }
+     }
+}
+}
+</style>
